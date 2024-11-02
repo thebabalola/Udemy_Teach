@@ -1,0 +1,115 @@
+/*
+Flex Box: is a one dimentional stlying pattern
+
+Before flexbox, there was this layput mode;
+	- Block, for sections in a webpage
+	- Inline, for text
+	- Table, for two-dimensional table data
+	- Positioned, for explicit position of an element
+
+Why Flexbox?
+	- a lot of flexibility
+	- arrange items
+	- spacing
+	- alignment
+	- order of items
+	- bootstrap 4 is built on top of the flex layout
+
+Axis 
+	The Main Axis - (left to right)
+	The Cross Axis - (Top to Bottom)
+*/
+
+
+/* --- Flex Container ---
+Properties of the flex Container;
+	- display
+	- flex-direction
+	- flex-wrap
+	- flex-flow 	(combines flex direction and flex wrap)
+
+	- justify-content 	(space between- spaces in-between the items, space around -space all around the content, space evenly - equal spaces all around the items of the containee)
+	- align-items
+	- align-content 	(combines justify content and align items - in cross axis. default is strech)
+*/
+
+/* --- Flex Item ---
+Properties of the flex items;
+	- order 	(used to change default order in which items appear in the flex container e.g 1, 2, 3 etc - starting from the back)
+	- flex-grow
+	- flex-shrink  (by default flex items have a value of 0 for grow & value of 1 for shrink, that is why they dont grow nor shrink)
+	- flex-basis	(default vaule is auto, it is used in place of width - before a flex growth or flex shrink)
+	- flex
+	- align-self (alignment of individual flex items -values are pretty much the same as align itmes)
+*/
+
+body {
+	margin: 0;
+	}
+
+.container {
+	border: 6px solid black;
+	display: flex;  /*creates block level container (i.e it contains all of the whole widyh of the screen)*/
+	flex-direction: row-reverse; /*default driection of the flex*/
+	flex-wrap: wrap; /*wraps content that overflows the container */
+
+	flex-flow: row nowrap; /* it combines flex-direction and flex-wrap together*/
+	justify-content: center; /*aligns content along the main axis*/
+	align-items: flex-end;	/*default value is strech same as align-content*/
+	align-content:space-around; /*- used with mutiple rows or line, it aligns items within the cross axis, it is a mix of justify content & align items (used with multipls lines or multiple rows) */
+
+	/*display: inline-flex; - creates inline level container (i.e it widths doesnt exceed the size of it content in-line)*/
+	/*flex-wrap: nowrap; - the default value of the flex wrap*/
+}
+
+.flex-item {
+	color: white;
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-align: center;
+
+	flex-grow: 1;  /*all items grow evenly*/
+	flex-shrink: 1; /*deafult shrink -apploes to all the items*/
+	flex-basis: auto; /*it is used in place of width - before a flex growth or flex shrink*/
+	flex: 2 5 200px; /*first is grow, next shrink and last basis*/
+
+}
+.item-1 {
+	background-color: #B4BF35;
+	order: 5;
+	flex-grow: 1;  /*takes up rest of white space left (overwrite initial flex-grow definition)*/
+}
+.item-2 {
+	background-color: #B95F21;
+	order: 3;
+}
+.item-3 {
+	background-color: #1C4C56;
+	order: 4;
+}
+.item-4 {
+	background-color: #B4BF37;
+	order: 1;
+	
+	
+}
+.item-5 {
+	background-color: #B95F21;
+	flex-grow: 3;  /*i.e is takes 3 times it orginal size. if 20px - it becomes 60px in size*/
+}
+.item-6 {
+	background-color: #1C4C56;
+	flex-shrink: 4; /*only this item specifically shrinks*/
+}
+.item-7 {
+	background-color: #B4BF35;
+	flex-basis: 300px; /*sizes can be specified in pixels, percentages or relative units*/
+}
+.item-8 {
+	background-color: #B95F21;
+	flex: 2 5 200px;	/*first is grow, next shrink and last basis*/
+}
+.item-9 {
+	background-color: #1C4C56;
+	align-self: stretch;/*values are pretty much the same as align itmes*/;
+}
