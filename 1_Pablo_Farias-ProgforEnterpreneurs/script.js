@@ -26,6 +26,14 @@ console.log(fullName);
 
 
 
+// ---- Undefined ----
+let dogName;
+console.log(dogName); //outputs undefined
+
+let catName = '';
+console.log(catName); 
+
+
 // --- Functions ---
 function sum () {
 	let a = 15;
@@ -256,5 +264,78 @@ console.log(prices); //Arranges it in an array like orders - row [... ..]
 
 
 /* ----- Objects ----- */
+let obj = {
+	name: 'taiwo',
+	age: '21',
+	'occupation': 'FrontEnd Developer',
+
+	greetings(){
+		return'Welcome to objects';
+	}
+};
+console.log(obj);
+console.log(obj['occupation']);
+console.log(obj.greetings());
 
 
+
+/* ---- JSON --- */
+//a data exchange protocol, to communicate between two diffrent servers (API)
+
+let user = {
+	name: 'Peter',
+	score: 100,
+	country: 'Chile',
+	pets: ['Dog', 'Cat', 'Goat'],
+	profile: {  
+		type: 'private',
+		account: 'premium'
+	}  //profile is an object inside of the user object
+};
+
+console.log(user);
+console.log(user.pets[1]);
+console.log(user.profile.type);
+
+
+
+/* TAsk 5 */
+let users = [
+    {username: 'asdfasdf', credits: 150},
+    {username: 'asasdfdf', credits: 510},
+    {username: 'asdasdffasdf', credits: 11},
+    {username: 'weewrwe', credits: 0},
+    {username: 'werwer', credits: 120},
+    {username: 'sdfsdf', credits: 130},
+    {username: 'dfgdfg', credits: 0},
+    {username: 'dfgdfg', credits: 510},
+    {username: '4564564', credits: 110},
+];
+
+for (let i = 0; i < users.length; i++) {
+    users[i].credits += 10; // Add 10 to the credits of each user
+}
+
+console.log(users);
+
+
+/*
+let users = [
+    {username: 'asdfasdf', credits: 150},
+    {username: 'asasdfdf', credits: 510},
+    {username: 'asdasdffasdf', credits: 11},
+    {username: 'weewrwe', credits: 0},
+    {username: 'werwer', credits: 120},
+    {username: 'sdfsdf', credits: 130},
+    {username: 'dfgdfg', credits: 0},
+    {username: 'dfgdfg', credits: 510},
+    {username: '4564564', credits: 110},
+];
+
+let itr;
+
+for(itr = 0; itr < users.length; itr++) {
+	users[itr].credits = users[itr].credits + 10; //adds 10 to every users credit property of the objects in the array
+}
+ console.log(users);
+ */
