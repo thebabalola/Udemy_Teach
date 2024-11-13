@@ -1,0 +1,81 @@
+/* Standard BoilerPlate */
+
+/* --- Reset & Normalize --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---  Base Typography ---*/
+html, body {
+  height: 100%;
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* --- Links and Lists ---*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* ---  Image and Media Handling --- (Ensure images don’t overflow their containers and make them responsive by default)*/
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Button Styling ---*/
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* For Layout Defaults*/
+
+*, *::before, *::after {
+  box-sizing: inherit;
+} /* Make all elements inherit box-sizing for consistent padding and border treatment */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/*
+  - The ' * ' selector is called the "universal selector." It selects all elements on the page, applying styles to everything. 
+  - box-sizing: border-box; ensures padding and borders are included in an element’s total width and height. This approach helps keep layouts consistent when adding padding or borders to elements.
+*/

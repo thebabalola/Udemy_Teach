@@ -5,33 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<style>
-		body{
-			font-family: Arial, Helvetica, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-
-		#header{
-			background-color: #F16F51;
-			height: 50px;
-			text-align: center;
-			list-style: 40px;
-		}
-
-		h1 {
-			vertical-align: middle;
-		}
-	</style>
+	<link rel="stylesheet" href="/1_Pablo_Farias-ProgforEnterpreneurs/projects/styles.css">
 </head>
 
 <body>
-	<div id="header"><h1>>Zenva Love</h1></div>
+	<div id="header"><h1>Zenva Love</h1></div>
 
 	<div id="main" >
 		<div class="row">
 			<div class="row">
-				<label>Gender</label>
+				<label class="gends">Genders</label>
 				<select id="gender">
 					<option value="A">All</option>
 					<option value="F">Female</option>
@@ -39,16 +22,16 @@
 				</select>
 			</div>
 			<div class="row">
-				<label>Hobbies</label>
+				<label class="hby">Hobbies</label>
 				<input type="text" id="hobby"/>
 			</div>
 			<div class="row">
-				<button>Search</button>
+				<button id="searchBtn">Search</button>
 			</div>
 		</div>
 
 		<div id="result">
-			<div class="person-row">
+			<!-- <div class="person-row">
 				<img src="/img/human-img1.jpg" />
 				<div class="person-info">
 					<div>Mike</div>
@@ -73,29 +56,11 @@
 					<div>Sports, Pets, Party</div>
 				</div>
 				<button>Add as friend</button>
-			</div>
+			</div> -->
 
-			<div class="person-row">
-				<img src="/img/human-img1.jpg"/>
-				<div class="person-info">
-					<div>Mike</div>
-					<div>Sports, Pets, Party</div>
-				</div>
-				<button>Add as friend</button>
-			</div>
-
-			<div class="person-row">
-				<img src="/img/human-img1.jpg"/>
-				<div class="person-info">
-					<div>Mike</div>
-					<div>Sports, Pets, Party</div>
-				</div>
-				<button>Add as friend</button>
-			</div>
-			
 		</div>
 	</div>
 
-	<script></script>
+	<script src="./script.js"></script>
 </body>
 </html>
