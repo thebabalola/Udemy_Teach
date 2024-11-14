@@ -1,0 +1,43 @@
+li {
+	margin: 10px;
+}
+
+#container {
+	padding: 30px;
+	background-color: yellow;
+}
+
+.class1 {
+	background-color: #9B50AF;
+}
+
+.class2 {
+	background-color: green;
+}
+
+.highlighted {
+	color: red;
+	background-color: blue;
+}
+.highlighted1 {
+	color: red;
+	background-color: greenyellow;
+}
+
+
+/* FOR select by Attribute*/
+.highlight{
+	background-color: yellow;
+}
+
+.creature {
+	margin: 20px;
+	background-color: #FFE1FF;
+	border: 1px solid #8B7B8B;
+}
+
+.terrain {
+	margin: 20px;
+	background-color: green;
+	border: 1px solid #8B7B8B;
+}
