@@ -41,3 +41,18 @@ li {
 	background-color: green;
 	border: 1px solid #8B7B8B;
 }
+
+
+
+/* Working with Events*/
+body {
+	font-family: arial;
+	/* background-color: lightblue;*/
+}
+
+#example {
+	width: 100px;
+	height: 100px;
+	margin: 150px auto;	
+	background-color: #3BEAB4;
+}
