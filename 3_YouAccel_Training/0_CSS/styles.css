@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Text Peoperties*/
+.css-dev h1{
+	color: brown;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.textprop {
+	letter-spacing: 10px;
+	word-spacing: 10px;
+	text-align: left;
+}
+
+/* Font Properties*/
+.fontprop {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: medium;
+	font-style: italic;
+	/* line-hht: 200;eig */
+}
+
+/* CSS Background*/
+.css-back {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid darkcyan;
+	background-image: url(/img/pexels-bg2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.css-back h1{
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* CSS Transparency*/
+.css-back img{
+	width: 150px;
+	height: auto;
+	border: 10px solid black;
+	border-radius: 100px;
+	opacity: 0.55; /*this means 40% transparent*/
+	min-width: none;
+	max-width: none;
+	min-height: auto;
+	max-height: none;
+}
+
+/* Nested Div*/
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(/img/pexels-bg3.jpg);
+	background-size: contain;
+	height: 150px;
+}
+
+.inner-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	opacity: 80%;
+	width: 70%;
+	height: 70%;
+}
+
+.inner-div h1 {
+	color: white;
+}
