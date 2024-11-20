@@ -85,3 +85,72 @@ body {
 .inner-div h1 {
 	color: white;
 }
+
+/* Float & Clear*/
+.float{
+	height: auto; /* i.e it increases as content enters or come into it */
+}
+
+.float img {
+	width: 170px;
+	height: auto;
+	float: left;
+	margin-right: 10px; 
+}
+
+.float p {
+	float: none; /*Or better still commnent it out*/
+	margin-left: 180px;
+}
+
+.float-p2 {
+	clear: left; /*forces the p2 content below the image, instead of staying immediately next after the first p*/
+	padding: 10px;
+}
+
+
+/* Z-index*/
+.zindex-cont {
+	display: flex;
+	height: auto;
+	background: lightskyblue;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.inner {
+	height: 300px;
+	width: 55%;
+	background: greenyellow;
+	border: 5px solid green;
+
+	top: auto;
+	position: absolute;	/*This made it worked*/
+	z-index: 1;
+}
+
+.a-links {
+	height: 200px;
+	width: 90%;
+	background: orange;
+	border: 5px dotted red;
+
+	top: auto;
+	position: absolute; /*This made it worked*/
+	z-index: 2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.a-links a:active {
+	color: blue;
+	font-weight: bold;
+}
+.a-links a:visited {
+	color: purple;
+	font-style: italic;
+}
