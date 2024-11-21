@@ -112,4 +112,64 @@ window.addEventListener('load', function() {
 
 
 	// Condiitionals
+	let studentScore = 101;
+
+	let score = document.querySelector('.conditionals');
+	if (studentScore < 50){
+		score.innerHTML = 'You have to retake the class';
+	}
+	else if (studentScore < 70){
+		score.innerHTML = 'You passed, and should proceed to next class';
+	}
+	else {
+		score.innerHTML = 'score is invalid'
+	}
+
+
+		/* Do While loop */
+	let text = '';
+	let i = 0;
+
+	do {
+		i += 10;
+		text += `Value is now: ${i}<br>`;
+	} while (i < 15); // Condition to stop the loop
+
+	document.querySelector('button').innerHTML = text;
+
+
+		/* Function */
+	function myFunc(a, b) {
+		return a + b
+	}
+	let func = document.querySelector('.func');
+	func.innerHTML = myFunc(8, 2);
+
+		/* Events */
+	let eventManipulate = document.querySelector('.resultBtn');
+	let output = document.querySelector('#output')
+
+
+	eventManipulate.addEventListener('click', function(){
+		output.innerHTML = new Date();
+
+				//OR
+
+		let currentDate = new Date();
+		output.innerHTML = `The current Date and Time is: <br> ${currentDate}`; //this odes the same as the above. just that it allows of interpolation of text
+	})
+
+
+	//PROJECT
+	let hoveredImg = document.querySelector('.thumbnails img');
+	let previewImg = document.querySelector('.preview img');
+
+		// Loop through all thumbnails
+	thumbnails.forEach(function(thumbnail) {
+		
+	thumbnail.addEventListener('mouseenter', function(){	// Add mouseenter event listener to each thumbnail
+			previewImg.src = thumbnail.src;	// Change the preview image source to match the hovered thumbnail
+		});
+	});
+
 });
